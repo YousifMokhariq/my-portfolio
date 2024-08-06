@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yousif Almokhariq</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: sans-serif;
+        }
+        .header{
+            background-color:black ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            padding: 10px 200px;
+            position: fixed;
+            width: 100%;
+        }
+        .logo{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: large;
+            font-weight: 700;
+        }
+        .nav a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: large;
+            padding-left: 30px;
+        }
+        .nav a:hover{
+            color: darkgoldenrod;
+        }
+        .profile-photo{
+            background-image: linear-gradient(to right, rgba(28,30,29,1), rgba(245,245,245,0));
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-photo img{
+            border-radius: 100%;
+            width: 300px;
+            height: auto;
+            margin-top: 90px;
+            margin-bottom:20px;
+        }
+        .main{
+            padding: 300px 300px;
+            width: 100%;
+            min-height: 70vh;
+            background-color: #141414;
+        }
+        .main h2{
+            color: whitesmoke;
+            font-size: xx-large;
+        }
+        .main h2 span{
+            font-size: 60px;
+            color: darkorange;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .main h3{
+            color:whitesmoke;
+            font-size: x-large;
+            margin: 10px 0;
+        }
+        .view-btn{
+            display: inline-block;
+           color: whitesmoke;
+           background-color: orange;
+           text-decoration: none; 
+           font-size: x-large;
+           padding: 10px;
+           letter-spacing: 1px;
+           border-radius: 8px;
+           margin: 10px 0;
+           transition: 0.7s ease;
+        }
+        .view-btn:hover{
+            background-color: darkorange ;
+            transform:scale(1.1);
+        }
+        .socialmedia a{
+            display: inline-block;
+            color: whitesmoke;
+            font-size: x-large;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        .socialmedia a:hover{
+            transform: scale(1.25);
+        }
+        .skill{
+            background-color: darkorange;
+            width: 100%;
+            min-height: 70vh;
+        }
+        .title{
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            padding: 100px;
+            margin-bottom: 30px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .cards{
+            background-color: whitesmoke;
+            width: 21.25em;
+            box-shadow: 0 5px 25px rgba(1 1 1 / 50%);
+            border-radius: 10px;
+            padding: 100px 40px;
+            margin: 15px;
+            transition: 0.7s ease;
+        }
+        .cards:hover{
+            transform: scale(1.1);
+        }
+        .icon{
+            font-size: 80px;
+            text-align: center;
+        }
+        .info h3{
+            color: rgba(28,30,29,1);
+            text-align: center;
+            padding-top: 30px;
+            font-size: 22px;
+        }
+        .project{
+            background-color: #141414;
+            width: 100%;
+            min-height: 70vh;
+        }
+        .project .container .cards .info a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            background-color: orange;
+            padding: 5px;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            color: whitesmoke;
+            font-size: x-large;
+            margin-top: 10px;
+            transition: 0.7s ease;
+        }
+        .project .container .cards .info a:hover{
+            background-color: darkorange;
+            transform: scale(1.1);
+        }     
+    </style>
+</head>
+<body>
+    <dev class="header">
+        <a href="#Home" class="logo" class="photo">Yousif Almokhariq</a>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </dev>
+    <div class="profile-photo">
+        <img src="img/yousif.JPG" alt="profile-photo"/>
+    </div>
+    <div class="main" id="about">
+        <h2>Hello, I'am Yousif Almokhariq<br><span>Full Stack Web Developer</span><br></h2>
+        <h3>I Build Full Dynaminc Websites Pages</h3>
+        <a href="#projects" class="view-btn">View My Projects</a><br>
+        <dev class="socialmedia">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </dev>
+    </div>
+    <div class="skill" id="skills">
+        <h3 class="title">Skills</h3>
+        <div class="container">
+            <div class="cards">
+                <div class="icon" style="color: orange;">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="info">
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="icon" style="color: blue;">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="info">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="icon" style="color: rgba(255 202 0 / 0.8) ;">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="info">
+                    <h3>Java Script</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project" id="projects">
+        <h3 class="title">Projects</h3>
+        <div class="container">
+            <div class="cards">
+                <div class="icon" style="color: orange;">
+                    <i class="fa-solid fa-folder"></i>
+                </div>
+                <div class="info">
+                    <h3>Online Store Project</h3>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <!-- <div class="cards">
+                <div class="icon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="info">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="icon">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="info">
+                    <h3>Java Script</h3>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>

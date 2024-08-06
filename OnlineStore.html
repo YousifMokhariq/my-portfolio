@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First Project</title>
+</head>
+
+<body>
+    <!-- Header of the page -->
+    <div style="background-color:lightgray; text-align: center; height: 50px;">
+        <h1>My Online Store</h1>
+    </div>
+    <!-- Table withe four headers and three rows each contain four data cells -->
+    <table border="2" style="width: 90%;height: 100vh;text-align: center; font-size:large; margin: 0 auto; margin-top: 20px;">
+        
+        <tr>
+            <th>Item</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>iPhone</td>
+            <td><img src="img/iphone.jpeg" style="max-height: 200px;"></td>
+            <td>500$</td>
+            <td><a href="https://www.apple.com/">Apple.com</a></td>    
+        </tr>
+        <tr>
+            <td>Samsung</td>
+            <td><img src="img/samsung.jpeg" style="max-height: 200px;"></td>
+            <td>350$</td>
+            <td><a href="https://www.samsung.com/sa/">Samsung.com</a></td>    
+        </tr>
+        <tr>
+            <td>Huawei</td>
+            <td><img src="img/heuwei.jpeg" style="max-height: 200px;"></td>
+            <td>300$</td>
+            <td><a href="https://www.huawei.com/en/">Huawei.com</a></td>    
+        </tr>
+
+    </table>
+    <!-- Form with POST method contains header with three labels, four inputs -->
+    <form action="https://www.google.com" method="post">
+        <div style="background-color: lightgray; height: 20%;padding-top: 20px; margin-top: 40px;">
+            <h2>Request Your Device Now!</h2> <br>
+            <span>
+                <label>Name: </label>
+                <input type="text" required/>
+                <label>Email: </label>
+                <input type="email" required/>
+                <label>Date Of Birth: </label>
+                <input type="date" required/>
+                <input type="submit"/>
+            </span>
+        </div>
+    </form>
+    
+</body>
+
+</html>
