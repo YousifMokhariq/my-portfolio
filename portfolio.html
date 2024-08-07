@@ -160,7 +160,29 @@
         .project .container .cards .info a:hover{
             background-color: darkorange;
             transform: scale(1.1);
-        }     
+        }  
+        .contact{
+            background-color: darkorange;
+            width: 100%;
+            min-height: 70vh;
+        }
+        .contact .container .cards .icon{
+            font-size: 60px;
+            text-align: center;
+        }
+        .contact .container .cards{
+            padding: 20px 20px;
+        }
+        .contact .container .cards .info a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+          
     </style>
 </head>
 <body>
@@ -170,7 +192,7 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#contacts">Contact</a>
         </nav>
     </dev>
     <div class="profile-photo">
@@ -227,23 +249,36 @@
                     <a href="#">View Project</a>
                 </div>
             </div>
-            <!-- <div class="cards">
-                <div class="icon">
-                    <i class="fa-brands fa-css3-alt"></i>
+        </div>    
+    </div>
+    <div class="contact" id="contacts">
+        <h3 class="title">Contacts</h3>
+        <div class="container">
+            <div class="cards">
+                <div class="icon" style="color: #EC4237">
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="info">
-                    <h3>CSS</h3>
+                    <a href="yousefmokhariq@gmail.com">Email</a>
                 </div>
             </div>
             <div class="cards">
-                <div class="icon">
-                    <i class="fa-brands fa-js"></i>
+                <div class="icon" style="color: #3877A2">
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
                 <div class="info">
-                    <h3>Java Script</h3>
+                    <a href="https://www.linkedin.com/">LinkdIn</a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="icon" style="color: rgba(28,30,29,1)">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </div>
+                <div class="info">
+                    <a href="https://x.com/YoMo59681394">X-Twitter</a>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </body>
 </html>
