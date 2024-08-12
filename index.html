@@ -6,314 +6,118 @@
     <title>Yousif Almokhariq</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-            font-family: sans-serif;
-        }
-        .header{
-            background-color:black ;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 70px;
-            padding: 10px 200px;
-            position: fixed;
-            width: 100%;
-        }
-        .logo{
-            text-decoration: none;
-            color: whitesmoke;
-            font-size: large;
-            font-weight: 700;
-        }
-        .nav a{
-            text-decoration: none;
-            color: whitesmoke;
-            font-size: large;
-            padding-left: 30px;
-        }
-        .nav a:hover{
-            color: darkgoldenrod;
-        }
-        .profile-photo{
-            background-image: linear-gradient(to right, rgba(28,30,29,1), rgba(245,245,245,0));
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .profile-photo img{
-            border-radius: 100%;
-            width: 300px;
-            height: auto;
-            margin-top: 90px;
-            margin-bottom:20px;
-        }
-        .main{
-            padding: 300px 300px;
-            width: 100%;
-            min-height: 70vh;
-            background-color: #141414;
-        }
-        .main h2{
-            color: whitesmoke;
-            font-size: xx-large;
-        }
-        .main h2 span{
-            font-size: 60px;
-            color: darkorange;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .main h3{
-            color:whitesmoke;
-            font-size: x-large;
-            margin: 10px 0;
-        }
-        .view-btn{
-            display: inline-block;
-           color: whitesmoke;
-           background-color: orange;
-           text-decoration: none; 
-           font-size: x-large;
-           padding: 10px;
-           letter-spacing: 1px;
-           border-radius: 8px;
-           margin: 10px 0;
-           transition: 0.7s ease;
-        }
-        .view-btn:hover{
-            background-color: darkorange ;
-            transform:scale(1.1);
-        }
-        .socialmedia a{
-            display: inline-block;
-            color: whitesmoke;
-            font-size: x-large;
-            padding-left: 10px;
-            margin-top: 10px;
-        }
-        .socialmedia a:hover{
-            transform: scale(1.25);
-        }
-        .skill{
-            background-color: darkorange;
-            width: 100%;
-            min-height: 70vh;
-        }
-        .title{
-            color: whitesmoke;
-            display: flex;
-            justify-content: center;
-            font-size: 50px;
-            padding: 100px;
-            margin-bottom: 30px;
-        }
-        .container{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        .cards{
-            background-color: whitesmoke;
-            width: 21.25em;
-            box-shadow: 0 5px 25px rgba(1 1 1 / 50%);
-            border-radius: 10px;
-            padding: 100px 40px;
-            margin: 15px;
-            transition: 0.7s ease;
-        }
-        .cards:hover{
-            transform: scale(1.1);
-        }
-        .icon{
-            font-size: 80px;
-            text-align: center;
-        }
-        .info h3{
-            color: rgba(28,30,29,1);
-            text-align: center;
-            padding-top: 30px;
-            font-size: 22px;
-        }
-        .project{
-            background-color: #141414;
-            width: 100%;
-            min-height: 70vh;
-        }
-        .project .container .cards .info a{
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-            background-color: orange;
-            padding: 5px;
-            letter-spacing: 1px;
-            border-radius: 8px;
-            color: whitesmoke;
-            font-size: x-large;
-            margin-top: 10px;
-            transition: 0.7s ease;
-        }
-        .project .container .cards .info a:hover{
-            background-color: darkorange;
-            transform: scale(1.1);
-        }  
-        .contact{
-            background-color: darkorange;
-            width: 100%;
-            min-height: 70vh;
-        }
-        .contact .container .cards .icon{
-            font-size: 60px;
-            text-align: center;
-        }
-        .contact .container .cards{
-            padding: 20px 20px;
-        }
-        .contact .container .cards .info a{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: black;
-            font-size: large;
-            font-weight: bold;
-        }
-        .footer{
-            display: flex;
-            justify-content: space-between;
-            background-color: #141414;
-            min-height: 6vh;
-        }
-        .footer .footer-copyright{
-            color: white;
-            font-style: italic;
-            padding-top: 30px;
-        }
-        .footer .socialmedia{
-            padding-top: 20px;
-        }
-          
-    </style>
 </head>
 <body>
-    <dev class="header">
-        <a href="#Home" class="logo" class="photo">Yousif Almokhariq</a>
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contact</a>
+    <dev class="bg-black flex justify-between items-center h-[70px] py-[10px] px-[200px] fixed w-full">
+        <a href="#Home" class="no-underline text-slate-200 text-lg font-bold">Yousif Almokhariq</a>
+        <nav>
+            <a href="#about" class="no-underline text-slate-200 text-lg pl-[30px] hover:text-orange-400">About</a>
+            <a href="#skills" class="no-underline text-slate-200 text-lg pl-[30px] hover:text-orange-400">Skills</a>
+            <a href="#projects" class="no-underline text-slate-200 text-lg pl-[30px] hover:text-orange-400">Projects</a>
+            <a href="#contacts" class="no-underline text-slate-200 text-lg pl-[30px] hover:text-orange-400">Contact</a>
         </nav>
     </dev>
-    <div class="profile-photo">
-        <img src="img/yousif.JPG" alt="profile-photo"/>
+    <div class="bg-gradient-to-r from-zinc-900 to-slate-200 w-full flex items-center justify-center">
+        <img src="img/yousif.JPG" alt="profile-photo" class="rounded-full w-[200px] h-auto mt-[90px] mb-[20px]"/>
     </div>
-    <div class="main" id="about">
-        <h2>Hello, I'am Yousif Almokhariq<br><span>Full Stack Web Developer</span><br></h2>
-        <h3>I Build Full Dynaminc Websites Pages</h3>
-        <a href="#projects" class="view-btn">View My Projects</a><br>
-        <dev class="socialmedia">
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+    <div class="p-[200px] w-full min-h-[100vh] bg-zinc-900" id="about">
+        <h2 class="text-slate-200 text-2xl">Hello, I'am Yousif Almokhariq<br><span class="text-6xl text-orange-500 tracking-[1px] inline-block my-[10px]">Full Stack Web Developer</span><br></h2>
+        <h3 class="text-slate-200 text-xl my-10px">I Build Full Dynaminc Websites Pages</h3>
+        <a href="#projects" class="inline-block text-slate-200 bg-orange-500 no-underline text-xl p-[5px] tracking-[1px] rounded-lg my-[10px] transition ease-in-out duration-300 hover:bg-orange-600 hover:scale-110">View My Projects</a><br>
+        <dev>
+            <a href="#" class="inline-block text-slate-200 text-xl pl-[10px] mt-[10px] hover:scale-125"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="inline-block text-slate-200 text-xl pl-[10px] mt-[10px] hover:scale-125"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="inline-block text-slate-200 text-xl pl-[10px] mt-[10px] hover:scale-125"><i class="fa-brands fa-square-x-twitter"></i></a>
         </dev>
     </div>
-    <div class="skill" id="skills">
-        <h3 class="title">Skills</h3>
-        <div class="container">
-            <div class="cards">
-                <div class="icon" style="color: orange;">
+    <div class="bg-orange-500 w-full min-h-[100vh]" id="skills">
+        <h3 class="text-slate-200 flex justify-center text-[50px] p-[50px]">Skills</h3>
+        <div class="text-slate-200 flex justify-center flex-row flex-wrap">
+            <div class="bg-slate-200 w-[21.25em] h-[20em] shadow-2xl py-[100px] px-[40px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[70px] text-center text-orange-500">
                     <i class="fa-brands fa-html5"></i>
                 </div>
-                <div class="info">
+                <div class="text-zinc-900 text-center pt-[10px] text-[22px] font-semibold">
                     <h3>HTML</h3>
                 </div>
             </div>
-            <div class="cards">
-                <div class="icon" style="color: blue;">
+            <div class="bg-slate-200 w-[21.25em] h-[20em] shadow-2xl py-[100px] px-[40px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[70px] text-center text-blue-700">
                     <i class="fa-brands fa-css3-alt"></i>
                 </div>
-                <div class="info">
+                <div class="text-zinc-900 text-center pt-[10px] text-[22px] font-semibold">
                     <h3>CSS</h3>
                 </div>
             </div>
-            <div class="cards">
-                <div class="icon" style="color: rgba(255 202 0 / 0.8) ;">
+            <div class="bg-slate-200 w-[21.25em] h-[20em] shadow-2xl py-[100px] px-[40px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[70px] text-center text-yellow-500">
                     <i class="fa-brands fa-js"></i>
                 </div>
-                <div class="info">
+                <div class="text-zinc-900 text-center pt-[10px] text-[22px] font-semibold">
                     <h3>Java Script</h3>
                 </div>
             </div>
         </div>
     </div>
-    <div class="project" id="projects">
-        <h3 class="title">Projects</h3>
-        <div class="container">
-            <div class="cards">
-                <div class="icon" style="color: orange;">
+    <div class="bg-zinc-900 w-full min-h-[100vh]" id="projects">
+        <h3 class="text-slate-200 flex justify-center text-[50px] p-[50px]">Projects</h3>
+        <div class="text-slate-200 flex justify-center flex-row flex-wrap">
+            <div class="bg-slate-200 w-[21.25em] h-[22em] shadow-2xl py-[100px] px-[40px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[70px] text-center text-orange-500">
                     <i class="fa-solid fa-folder"></i>
                 </div>
-                <div class="info">
-                    <h3>Online Store Project</h3>
-                    <a href="#">View Project</a>
+                <div>
+                    <h3 class="text-zinc-900 text-center pt-[30px] text-[22px] font-semibold">Online Store Project</h3>
+                    <a href="#" class="flex justify-center underline bg-orange-400 p-[5px] tracking-[1px] rounded-lg text-slate-200 text-xl mt-[10px] transition ease-in-out duration-150 hover:bg-orange-500">View Project</a>
                 </div>
             </div>
-            <div class="cards">
-                <div class="icon" style="color: orange;">
+            <div class="bg-slate-200 w-[21.25em] h-[22em] shadow-2xl py-[100px] px-[40px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[70px] text-center text-orange-500">
                     <i class="fa-solid fa-folder"></i>
                 </div>
-                <div class="info">
-                    <h3>Portfolio Project</h3>
-                    <a href="#">View Project</a>
+                <div>
+                    <h3 class="text-zinc-900 text-center pt-[30px] text-[22px] font-semibold">My-Portfolio Project</h3>
+                    <a href="#" class="flex justify-center underline bg-orange-400 p-[5px] tracking-[1px] rounded-lg text-slate-200 text-xl mt-[10px] transition ease-in-out duration-150 hover:bg-orange-500">View Project</a>
                 </div>
             </div>
         </div>    
     </div>
-    <div class="contact" id="contacts">
-        <h3 class="title">Contacts</h3>
-        <div class="container">
-            <div class="cards">
-                <div class="icon" style="color: #EC4237">
+    <div class="bg-orange-500 w-full min-h-[100vh]" id="contacts">
+        <h3 class="text-slate-200 flex justify-center text-[50px] p-[50px]">Contacts</h3>
+        <div class="text-slate-200 flex justify-center flex-row flex-wrap">
+            <div class="bg-slate-200 w-[21.25em] h-[10em] shadow-2xl p-[20px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[60px] text-center text-red-600">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="info">
-                    <a href="yousefmokhariq@gmail.com">Email</a>
+                    <a href="yousefmokhariq@gmail.com" class="flex justify-center items-center no-underline text-black text-lg font-bold">Email</a>
                 </div>
             </div>
-            <div class="cards">
-                <div class="icon" style="color: #3877A2">
+            <div class="bg-slate-200 w-[21.25em] h-[10em] shadow-2xl p-[20px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[60px] text-center text-blue-500">
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
                 <div class="info">
-                    <a href="https://www.linkedin.com/">LinkdIn</a>
+                    <a href="https://www.linkedin.com/" class="flex justify-center items-center no-underline text-black text-lg font-bold">LinkdIn</a>
                 </div>
             </div>
-            <div class="cards">
-                <div class="icon" style="color: rgba(28,30,29,1)">
+            <div class="bg-slate-200 w-[21.25em] h-[10em] shadow-2xl p-[20px] m-[15px] transition ease-in-out duration-150 hover:scale-110">
+                <div class="text-[60px] text-center text-zinc-900">
                     <i class="fa-brands fa-square-x-twitter"></i>
                 </div>
                 <div class="info">
-                    <a href="https://x.com/YoMo59681394">X-Twitter</a>
+                    <a href="https://x.com/YoMo59681394" class="flex justify-center items-center no-underline text-black text-lg font-bold">X-Twitter</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p class="footer-copyright">Copyright © 2024 Yousif Almokhariq. All rights reserved.</p>
-        <dev class="socialmedia">
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+    <div class="flex justify-between bg-zinc-900 min-h-[10vh]">
+        <p class="text-white italic">Copyright © 2024 Yousif Almokhariq. All rights reserved.</p>
+        <dev>
+            <a href="#" class="inline-block text-slate-200 text-xl pl-[10px] mt-[10px] hover:scale-125"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="inline-block text-slate-200 text-xl pl-[10px] mt-[10px] hover:scale-125"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="inline-block text-slate-200 text-xl pl-[10px] mt-[10px] hover:scale-125"><i class="fa-brands fa-square-x-twitter"></i></a>
         </dev>
     </div>
-    <div></div>
 </body>
 </html>
